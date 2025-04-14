@@ -12,7 +12,7 @@ st.set_page_config(page_title="My Master",
 with st.sidebar:
     selected = option_menu('Typing level',
 
-                           ['Biginner',
+                           ['beginner',
                             'Intermediate',
                             'Expert'],
                            menu_icon='levels',
@@ -20,20 +20,18 @@ with st.sidebar:
                            default_index=0)
 
 
-# # Diabetes Prediction Page
-# if selected == 'Diabetes Prediction':
+ # Diabetes Prediction Page
+ if selected == 'beginner':
+ # page title
+   st.title('!! Beginner Project !!')
+   # getting the input data from the user
+   col1, col2, col3 = st.columns(1)
 
-#     # page title
-#     st.title('Diabetes Prediction using ML')
+    with col1:
+         Source = st.text_input('Source of File/Folder')
 
-#     # getting the input data from the user
-#     col1, col2, col3 = st.columns(3)
-
-#     with col1:
-#         Pregnancies = st.text_input('Number of Pregnancies')
-
-#     with col2:
-#         Glucose = st.text_input('Glucose Level')
+    with col2:
+         Destination = st.text_input('Destination of File/Folder')  # After Renaming
 
 #     with col3:
 #         BloodPressure = st.text_input('Blood Pressure value')
