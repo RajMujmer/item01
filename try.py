@@ -22,16 +22,15 @@ with st.sidebar:
 
  # Diabetes Prediction Page
  if selected == 'beginner':
- # page title
+   # page title
    st.title('!! Beginner Project !!')
    # getting the input data from the user
    col1, col2, col3 = st.columns(1)
 
-    with col1:
-         Source = st.text_input('Source of File/Folder')
-
-    with col2:
-         Destination = st.text_input('Destination of File/Folder')  # After Renaming
+  with col1:
+     Source = st.text_input('Source of File/Folder')
+  with col2:
+     Destination = st.text_input('Destination of File/Folder')  # After Renaming
 
 #     with col3:
 #         BloodPressure = st.text_input('Blood Pressure value')
