@@ -16,7 +16,7 @@ with st.sidebar:
                             'Intermediate',
                             'Expert'],
                            menu_icon='levels',
-                           icons=['activity', 'Name', 'person'],
+                           icons=['activity', 'alarm', 'apple'],
                            default_index=0)
 
 
