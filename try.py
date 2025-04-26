@@ -25,7 +25,7 @@ if selected == 'beginner':
    # page title
   st.title('!! Beginner Project !!')
    # getting the input data from the user
-  col1, col2, col3 = st.columns(1)
+  col1, col2, col3 = st.columns(3)
 
 with col1:
   Source = st.text_input('Source of File/Folder')
