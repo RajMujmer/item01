@@ -2,6 +2,7 @@ import os
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
+import re
 
 # Set page configuration
 st.set_page_config(page_title="My Master",
@@ -25,12 +26,22 @@ if selected == 'beginner':
    # page title
   st.title('!! Beginner Project !!')
    # getting the input data from the user
-  col1, col2, col3 = st.columns(3)
+  col1, col2 = st.columns(2)
 
+def is_valid_url(url):
+    # Basic URL regex
+    pattern = re.compile(r'^(http|https)://[^\s]+$')
+    return pattern.match(url)
 with col1:
   Source = st.text_input('Source of File/Folder')
 with col2:
   Destination = st.text_input('Destination of File/Folder')  # After Renaming
+
+if Source and not is_valid_url(Source):
+    st.error("Please enter a valid Source URL (starting with http/https).")
+
+if Destination and not is_valid_url(Destination):
+    st.error("Please enter a valid Destination URL (starting with http/https).")
 
 #     with col3:
 #         BloodPressure = st.text_input('Blood Pressure value')
