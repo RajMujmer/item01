@@ -9,7 +9,7 @@ st.set_page_config(page_title="My Master",
                    page_icon="🧑‍⚕️")
 
 
-with st.sidebar:
+with st.navbar:
     selected = option_menu('Typing level',
 
                            ['beginner',
