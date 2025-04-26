@@ -5,8 +5,8 @@ from streamlit_option_menu import option_menu
 
 # Set page configuration
 st.set_page_config(page_title="My Master",
-                   layout="wide",
-                   page_icon="🧑‍⚕️")
+                   layout="centered",
+                   page_icon="🩺 🏥")       #🧑‍⚕️
 
 
 with st.sidebar:
