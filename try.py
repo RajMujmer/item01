@@ -26,10 +26,10 @@ if selected == 'beginner':
    # page title
   st.title('!! Beginner Project !!')
   
-def is_valid_url(url):
+def is_valid_path(path):
     # Basic URL regex
-    pattern = re.compile(r'^(http|https)://[^\s]+$')
-    return pattern.match(url)
+    pattern = re.compile(r'^[a-zA-Z0-9_\-\\\/:. ]+$')
+    return pattern.match(path)
 
 # getting the input data from the user
 col1, col2 = st.columns(2)
@@ -38,11 +38,11 @@ with col1:
 with col2:
   Destination = st.text_input('Destination of File/Folder')  # After Renaming
 
-if Source and not is_valid_url(Source):
-    st.error("Please enter a valid Source URL (starting with http/https).")
+if Source and not is_valid_path(Source):
+    st.error("Please enter a valid Source Path")
 
-if Destination and not is_valid_url(Destination):
-    st.error("Please enter a valid Destination URL (starting with http/https).")
+if Destination and not is_valid_path(Destination):
+    st.error("Please enter a valid Destination Path")
 
 #     with col3:
 #         BloodPressure = st.text_input('Blood Pressure value')
