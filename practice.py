@@ -13,3 +13,11 @@ st.write("Here is the data : ", df)
 
 st.markdown("# This is a level 1 heading")
 st.text("Ab Samajh aya ki nahi")
+
+
+code = """
+def greet(name):
+    print(f"Hello, {Name}!")
+"""
+st.text(code)
+
