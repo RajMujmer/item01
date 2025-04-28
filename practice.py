@@ -10,3 +10,5 @@ st.subheader("Here")
 Name = ["Aditya", "Ganesh", "Shivam"]
 st.write("Dekho!!! Time Ho gaya hai.", Name)
 
+df = pd.DataFrame(Name)
+st.write("Here is the data : ", df)
