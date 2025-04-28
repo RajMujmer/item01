@@ -15,5 +15,5 @@ st.markdown("# This is a level 1 heading")
 st.text("Ab Samajh aya ki nahi")
 
 
-name = st.text_input("Enter your name:", label="Your Name", placeholder="e.g., Charlie")
+name = st.text_input("Enter your name:", placeholder="e.g., Charlie")
 age = st.slider("Select your age:", 0, 100, 25, help="This slider controls your age.")
