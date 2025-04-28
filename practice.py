@@ -6,9 +6,10 @@ import seaborn as sns
 st.title("This is for practice purpose")
 st.header("Exploring Data....")
 st.subheader("Here")
-
 Name = ["Aditya", "Ganesh", "Shivam"]
-st.write("Dekho!!! Time Ho gaya hai.", Name)
-
 df = pd.DataFrame(Name)
 st.write("Here is the data : ", df)
+
+
+st.markdown("# This is a level 1 heading")
+st.text("Ab Samajh aya ki nahi")
