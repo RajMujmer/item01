@@ -16,7 +16,7 @@ st.text("Ab Samajh aya ki nahi")
 
 
 code = """
-def greet(name):
+def greet(Name):
     print(f"Hello, {Name}!")
 """
 st.text(code)
