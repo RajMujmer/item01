@@ -7,6 +7,6 @@ st.title("This is for practice purpose")
 st.header("Exploring Data....")
 st.subheader("Here")
 
-Name = ['Aditya', 'Ganesh', 'Shivam']
+Name = ["Aditya", "Ganesh", "Shivam"]
 st.write("Dekho!!! Time Ho gaya hai.", Name)
 
