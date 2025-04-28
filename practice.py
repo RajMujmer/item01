@@ -14,10 +14,5 @@ st.write("Here is the data : ", df)
 st.markdown("# This is a level 1 heading")
 st.text("Ab Samajh aya ki nahi")
 
-
-code = """
-def greet(Name):
-    print(f"Hello, {Name}!")
-"""
-st.text(code)
-
+age = st.slider("Select your age:", 0, 100, 25, help="This slider controls your age.")
+name = st.text_input("Enter your name:", label="Your Name", placeholder="e.g., Charlie")
