@@ -4,3 +4,5 @@ streamlit==1.29.0
 streamlit_option_menu
 matplotlib
 pandas
+seaborn
+
