@@ -19,3 +19,9 @@ name = st.text_input("Enter your name:", placeholder="e.g., Charlie")
 age = st.slider("Select your age:", 0, 100, 25, help="This slider controls your age.")
 
 option = st.selectbox("Choose a fruit:", ["Apple", "Banana", "Cherry"], index=1)
+
+def update_message(text, suffix="!!!"):
+    st.session_state['message'] = text + suffix
+
+st.text_input("Enter a message:", key="input_message", on_change=update_message, kwargs={"suffix": "..."})
+st.write(f"Your message: {st.session_state.get('message', '')}")
