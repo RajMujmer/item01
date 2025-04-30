@@ -21,16 +21,11 @@ age = st.slider("Select your age:", 0, 100, 25, help="This slider controls your 
 option = st.selectbox("Choose a fruit:", ["Apple", "Banana", "Cherry"], index=1)
 
 
-def format_name(name, prefix="Dr."):
-    st.session_state['formatted_name'] = f"{prefix} {name.upper()}"
+with st.form("my_form"):
+    name = st.text_input("Your name:")
+    email = st.text_input("Your email:")
+    age = st.slider("Your age:", 0, 100)
+    submitted = st.form_submit_button("Submit")
 
-st.text_input("Enter your name:", key="raw_name", on_change=format_name, args=("Mr.",)) # Note: args is a tuple
-st.write(f"Formatted Name: {st.session_state.get('formatted_name', '')}")
-
-
-
-def update_message(text, suffix="!!!"):
-    st.session_state['message'] = text + suffix
-
-st.text_input("Enter a message:", key="input_message", on_change=update_message, kwargs={"suffix": "..."})
-st.write(f"Your message: {st.session_state.get('message', '')}")
+    if submitted:
+        st.write(f"Name: {name}, Email: {email}, Age: {age}")
