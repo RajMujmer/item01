@@ -28,4 +28,4 @@ with st.form("my_form"):
     submitted = st.form_submit_button("Submit")
 
     if submitted:
-        st.write(f"Name:  {name}, Email:  {email}, Age:  {age}")
+        st.write(f"Name:  {name}, ID:  {ID}, HEIGHT:  {Height}")
