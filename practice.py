@@ -20,6 +20,7 @@ age = st.slider("Select your age:", 0, 100, 25, help="This slider controls your 
 
 option = st.selectbox("Choose a fruit:", ["Apple", "Banana", "Cherry"], index=1)
 
+#######################################################################################
 
 with st.form("my_form"):
     name = st.text_input("Your name:")
@@ -29,3 +30,14 @@ with st.form("my_form"):
 
     if submitted:
         st.write(f"Name:  {name}, ID:  {ID}, HEIGHT:  {Height}")
+
+
+#######################################################################################
+
+data = ["Feature A", "Feature B", "Feature C"]
+cols = st.columns(len(data))
+
+for i, feature in enumerate(data):
+    with cols[i]:
+        st.subheader(feature)
+        st.checkbox(f"Enable {feature}")
