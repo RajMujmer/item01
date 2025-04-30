@@ -41,3 +41,27 @@ for i, feature in enumerate(data):
     with cols[i]:
         st.subheader(feature)
         st.checkbox(f"Enable {feature}")
+
+######################################################################################
+
+import streamlit as st
+import pandas as pd
+import numpy as np
+
+tab1, tab2, tab3 = st.tabs(["Data Exploration", "Visualization", "Settings"])
+
+with tab1:
+    st.header("Data")
+    data = pd.DataFrame(np.random.rand(10, 2), columns=['x', 'y'])
+    st.dataframe(data)
+
+with tab2:
+    st.header("Chart")
+    st.line_chart(data)
+
+with tab3:
+    st.header("Preferences")
+    color = st.selectbox("Select color:", ["red", "green", "blue"])
+    st.write(f"Selected color: {color}")
+
+
