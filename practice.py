@@ -17,3 +17,5 @@ st.text("Ab Samajh aya ki nahi")
 
 name = st.text_input("Enter your name:", placeholder="e.g., Charlie")
 age = st.slider("Select your age:", 0, 100, 25, help="This slider controls your age.")
+
+option = st.selectbox("Choose a fruit:", ["Apple", "Banana", "Cherry"], index=1)
