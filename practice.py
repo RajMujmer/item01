@@ -25,11 +25,11 @@ option = st.selectbox("Choose a fruit:", ["Apple", "Banana", "Cherry"], index=1)
 with st.form("my_form"):
     name = st.text_input("Your name:")
     ID = st.text_input("Your ID")
-    Height = st.slider("Your height:", 0.1, 10.0)
+    Height = st.slider("Your height:", 100, 250)
     submitted = st.form_submit_button("Submit")
 
     if submitted:
-        st.write(f"Name:  {name}, ID:  {ID}, HEIGHT:  {Height}")
+        st.write(f"Name:  {name}, "    ", ID:  {ID}, "    ", HEIGHT:  {Height}cm")
 
 
 #######################################################################################
