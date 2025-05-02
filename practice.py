@@ -66,7 +66,7 @@ with tab3:
 
 #####################################################################################
 
-uploaded_file = st.file_uploader("Upload an image...", type=["png", "jpg", "jpeg"])
+uploaded_file = st.file_uploader("Upload a File...", type=["png", "jpg", "jpeg", "pdf", "txt", "xlsx"])
 
 
 
