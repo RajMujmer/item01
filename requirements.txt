@@ -5,6 +5,4 @@ streamlit_option_menu
 matplotlib
 pandas
 seaborn
-io
-PIL
-streamlit pillow
+
