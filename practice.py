@@ -64,4 +64,11 @@ with tab3:
     color = st.selectbox("Select color:", ["red", "green", "blue"])
     st.write(f"Selected color: {color}")
 
+#####################################################################################
+
+uploaded_file = st.file_uploader("Upload an image...", type=["png", "jpg", "jpeg"])
+
+
+
+
 
